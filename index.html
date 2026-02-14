@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior</title>
+</head>
+<body>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:white;
+    ;
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:white;
+}
+
+.logo{
+    font-weight:600;
+    font-size:18px;
+}
+
+.nav-buttons button{
+    padding:8px 16px;
+    border-radius:20px;
+    border:none;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.login{
+    background:rgb(255, 255, 255);
+}
+
+.cart{
+    background:blue;
+    color:white;
+}
+
+
+.hero{
+    margin:40px auto;
+    width:80%;
+    background:linear-gradient(135deg,#5c84f3,#111827);
+    padding:40px;
+    border-radius:15px;
+    color:white;
+}
+
+.hero h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.hero h1 span{
+    color:#fbbf24;
+}
+
+.hero p{
+    margin-bottom:20px;
+    opacity:0.8;
+}
+
+.hero button{
+    padding:10px 18px;
+    border:none;
+    border-radius:20px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+}
+
+
+.filter{
+    width:80%;
+    margin:20px auto;
+}
+
+.filter h3{
+    margin-bottom:10px;
+}
+
+.filter-buttons button{
+    padding:6px 14px;
+    border-radius:20px;
+    border:1px solid #d1d5db;
+    background:#f9fafb;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+.filter-buttons button.active{
+    background:#dbeafe;
+    border:none;
+}
+
+
+.products{
+    width:80%;
+    margin:30px auto;
+}
+
+.products h2{
+    margin-bottom:20px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.badge{
+    font-size:12px;
+    padding:4px 8px;
+    border-radius:8px;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+.sale{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.low-stock{
+    background:#ffedd5;
+    color:#ea580c;
+}
+
+.card h4{
+    margin:8px 0;
+}
+
+.price{
+    color:#2563eb;
+    font-weight:bold;
+    margin:8px 0;
+}
+
+.rating{
+    color:#fbbf24;
+    font-size:14px;
+}
+
+.card button{
+    margin-top:10px;
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.add{
+    background:#e5e7eb;
+}
+
+.added{
+    background:#16a34a;
+    color:white;
+}
+
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    padding:20px;
+    background:#e5e7eb;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🛒 Dior Official store</div>
+    <div class="nav-buttons">
+        <button class="login">Login</button>
+        <button class="cart">Cart 3</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Big <span>Discount</span> on this May 10, 2026</h1>
+    <p>Up to 25% off on selected Make up, Perfume, and Skincare. Limited stocks only.</p>
+    <button>Shop Deals</button>
+</section>
+
+<section class="filter">
+    <h3>Filter by</h3>
+    <div class="filter-buttons">
+        <button class="active">All</button>
+        <button>Make up</button>
+        <button>Perfume</button>
+        <button>Skincare</button>
+    </div>
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+
+        <div class="card">
+            <span class="badge sale">Sale</span>
+            <h4>Dior Sauvage EDT"</h4>
+            <img src="https://rustans-thebeautysource.com/en/wp-content/uploads/2022/12/2272645.jpg" width="300" height="200">
+            <p>Bergamot, Ambroxan, Geranium, Pepper, Lavender, Vetiver, Patchouli</p>
+            <div class="price">₱3,760.00</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5)</div>
+            <button class="add">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <span class="badge sale">Sale</span>
+            <h4>Dior Make up Set</h4>
+            <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2021%2F01%2Fdior-pure-glow-spring-collection-lipsticks-eyeshadows-lip-oil-plumper-blushes-nail-polishes-price-where-to-buy-3.jpg?q=75&w=800&cbr=1&fit=max"width="300" height="200">
+            <div class="price">₱5,995</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4.9)</div>
+            <button class="added">✓ Added</button>
+        </div>
+
+        <div class="card">
+            <span class="badge sale">Sale</span>
+            <h4>Dior Skincare</h4>
+            <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw12c72eca/Y0997147/Y0997147_C099700674_E01_GHC.jpg?sw=800" width="300" height="200">
+            <div class="price">₱3,000</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4.9)</div>
+            <button class="add">Add to Cart</button>
+        </div>
+
+        <div class="card">
+             <span class="badge sale">Sale</span>
+            <h4>Dior Maskara</h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW44E2BXjhhglzmkwsOFr_kCg_bwWGD8_pzA&s"width="300" height="200">
+            <div class="price">₱3,300</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5)</div>
+            <button class="add">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Dior Official store 
+</footer>
+
